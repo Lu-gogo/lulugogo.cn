@@ -1,18 +1,16 @@
 
+
 const links = [
-  { name: '学点计算机', value: '什么我又幻想了', href: 'https://github.com/Lu-gogo' },
-  { name: '看点动漫', value: '呃呃是臭郭楠', href: '#' },
-  { name: '做点模型', value: '魏大勋', href: '#' },
-  { name: '玩点小游戏', value: '诡秘诡秘想不想和我玩第五人格喵喵喵', href: '#' },
-]
-const stats = [
-  { name: 'Offices worldwide', value: '12' },
-  { name: 'Full-time colleagues', value: '300+' },
-  { name: 'Hours per week', value: '40' },
-  { name: 'Paid time off', value: 'Unlimited' },
+  { value: '学点计算机', name: '什么我又幻想了', image: '../../../public/image/Home/huanxiang.png', href: 'https://github.com/Lu-gogo' },
+  { value: '看点动漫', name: '呃呃是臭郭楠', image: '../../../public/image/Home/guonan.png', href: '#' },
+  { value: '做点模型', name: '魏大勋', image: '../../../public/image/Home/feiwu.png', href: '#' },
+  { value: '玩点小游戏', name: '诡秘诡秘想不想和我玩第五人格喵喵喵', image: '../../../public/image/Home/yuanding.png', href: '#' },
 ]
 
+
+
 export default function Home() {
+
   return (
     <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
       <img
@@ -61,38 +59,56 @@ export default function Home() {
                           cursor-pointer" // 响应式尺寸
             />
             <h2 className="text-6xl sm:text-6xl font-semibold tracking-tight text-pink-600 whitespace-nowrap">
-              欢迎来到断绝之壁！
+              欢迎来到断绝之壁！嗷呜嗷呜!!!!
             </h2>
           </div>
           <p className="italic mt-8 text-lg font-medium text-pretty text-pink-500 sm:text-xl/8 
           first-line:uppercase first-line:tracking-widest
           first-letter:text-7xl first-letter:font-bold first-letter:text-pink-600
           first-letter:mr-3 first-letter:float-left">
-            我的名字叫做
-            <span className="before:block before:absolute before:-inset-0.5 before:-skew-y-3 before:bg-pink-300 relative inline-block">
-              <span className="relative text-white">露露希</span>
-            </span>
-            ，年龄22岁，家在重庆市渝北区的悦清大道内，未婚。 我在「重庆大学」上学，每周最晚也会在周五九点前回家，  不吸烟不喝酒，偶尔沾点钓鱼，晚上十一点上床，保证睡足八个小 时，睡前喝一杯热乎乎的牛奶，再做二十分钟伸展运动，然后再睡觉，基本能熟睡到天亮，像婴儿一样不留下任何疲惫和压力。 就这样迎来第二天的早晨，健康检查结果也显示我很正常。我想说明我是一个不论何时都追求内心平稳的人，不拘泥于胜负，不纠结于烦恼，不树立会使我夜不能寐的敌人，这就是我在这个社会生活的态度，我也清楚这就是我的幸福。再说，就算要战斗我也不会输给任何人。
+            我的名字叫做<span className="text-2xl text-pink-600 font-bold">露露希</span>
+            ,年龄20岁,家在重庆市渝北区的悦清大道内,未婚. 我在「重庆大学」上学,每周最晚也会在周五九点前回家,  不吸烟不喝酒,偶尔沾点钓鱼,晚上十一点上床,保证睡足八个小 时,睡前喝一杯热乎乎的白开水,再做二十分钟伸展运动,然后再睡觉,基本能熟睡到天亮,像婴儿一样不留下任何疲惫和压力. 就这样迎来第二天的早晨,健康检查结果也显示我很正常.
+            我想说明我是一个不论何时都追求内心平稳的人,不拘泥于胜负,不纠结于烦恼,不树立会使我夜不能寐的敌人,这就是我在这个社会生活的态度,我也清楚这就是我的幸福.再说,就算要战斗我也不会输给任何人.
           </p>
         </div>
-        <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-          <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-2xl/7 font-semibold text-pink-700 sm:grid-cols-2 md:flex lg:gap-x-10">
+
+        <div className="mx-auto mt-20 max-w-2xl lg:mx-0 lg:max-w-none">
+
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
             {links.map((link) => (
-              <a key={link.name} href={link.href}>
-                {link.name} <span aria-hidden="true">&rarr;</span>
+              <a
+                href={link.href}
+                key={link.name}
+                className="group relative overflow-hidden rounded-b-4xl border-4 border-purple-600/20 bg-purple-400/40 p-6 text-center shadow-lg transition-all duration-300 hover:scale-105 hover:border-purple-600/50 hover:bg-purple-400/60 hover:shadow-xl"
+              >
+                {/* 图片 - 绝对定位在链接上方 */}
+                <div className="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-full ">
+                  <img
+                    src={link.image}
+                    alt={link.value}
+                    className="w-24 h-24 object-cover rounded-lg border-2 border-pink-300 shadow-lg "
+                  />
+                </div>
+                {/* 装饰性角标 */}
+                <div className="absolute -top-2 -right-2 h-10 w-10 rounded-bl-full bg-emerald-400/20"></div>
+                <div className="absolute -bottom-2 -left-2 h-12 w-12 rounded-tr-full bg-sky-500/20"></div>
+
+                <div className="relative z-10">
+                  <div className="text-2xl font-bold text-violet-500 transition-colors group-hover:text-violet-700">
+                    {link.value}
+                  </div>
+                  <div className="line-through mt-2 text-sm text-pink-100 transition-colors group-hover:text-white/80">
+                    {link.name} <span className="ml-1 transition-transform group-hover:translate-x-1"></span>
+                  </div>
+                </div>
               </a>
             ))}
           </div>
-          <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
-            {stats.map((stat) => (
-              <div key={stat.name} className="flex flex-col-reverse gap-1">
-                <dt className="text-base/7 text-pink-500">{stat.name}</dt>
-                <dd className="text-4xl font-semibold tracking-tight text-pink-600">{stat.value}</dd>
-              </div>
-            ))}
-          </dl>
         </div>
+
+
       </div>
     </div>
   )
 }
+
