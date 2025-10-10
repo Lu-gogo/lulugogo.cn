@@ -7,8 +7,6 @@ const links = [
   { value: '玩点小游戏', name: '诡秘诡秘想不想和我玩第五人格喵喵喵', image: '../../../public/image/Home/yuanding.png', href: '#' },
 ]
 
-
-
 export default function Home() {
 
   return (
@@ -79,19 +77,22 @@ export default function Home() {
               <a
                 href={link.href}
                 key={link.name}
-                className="group relative overflow-hidden rounded-b-4xl border-4 border-purple-600/20 bg-purple-400/40 p-6 text-center shadow-lg transition-all duration-300 hover:scale-105 hover:border-purple-600/50 hover:bg-purple-400/60 hover:shadow-xl"
+                className="group relative overflow-visiable rounded-b-4xl border-4 border-purple-600/20 bg-purple-400/40 p-6 text-center shadow-lg transition-all duration-300 hover:scale-105 hover:border-purple-600/50 hover:bg-purple-400/60 hover:shadow-xl"
               >
-                {/* 图片 - 绝对定位在链接上方 */}
-                <div className="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-full ">
-                  <img
-                    src={link.image}
-                    alt={link.value}
-                    className="w-24 h-24 object-cover rounded-lg border-2 border-pink-300 shadow-lg "
-                  />
+                {/* 悬停时显示的图片 - 放在 a 标签内部 */}
+                <div className="absolute left-1/2 -top-40 transform -translate-x-1/2 z-20 opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none">
+                  <div className=" rounded-sm shadow-2xl ">
+                    <img
+                      src={link.image}
+                      alt={link.value}
+                      className="w-40 h-35 object-cover rounded-lg border-2 border-pink-100"
+                    />
+                  </div>
+
                 </div>
                 {/* 装饰性角标 */}
-                <div className="absolute -top-2 -right-2 h-10 w-10 rounded-bl-full bg-emerald-400/20"></div>
-                <div className="absolute -bottom-2 -left-2 h-12 w-12 rounded-tr-full bg-sky-500/20"></div>
+                {/* <div className="absolute -top-2 -right-2 h-10 w-10 rounded-bl-full bg-emerald-400/20"></div>
+                <div className="absolute -bottom-2 -left-2 h-12 w-12 rounded-tr-full bg-sky-500/20"></div> */}
 
                 <div className="relative z-10">
                   <div className="text-2xl font-bold text-violet-500 transition-colors group-hover:text-violet-700">
@@ -104,6 +105,7 @@ export default function Home() {
               </a>
             ))}
           </div>
+
         </div>
 
 
