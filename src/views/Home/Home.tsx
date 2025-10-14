@@ -118,31 +118,17 @@ export default function Home() {
       {/* <!-- 填补空白的装饰性区域 --> */}
       <div className="wave-pattern py-16 bg-gradient-to-b from-violet-500 to-violet-200">
         <div className="relative container mx-auto px-4">
-
-          {/* <div className="absolute left-0 top-0 w-1/4 h-full z-0 overflow-hidden animate-float" style={{ animationDelay: '3s' }}>
-            <img
-              src="../../../public/image/Home/guimi.jpg" // 替换为你的图片路径
-              alt="动漫角色装饰"
-              className="w-full h-full object-contain drop-shadow-lg"
-            />
-          </div> */}
-
-          {/* 右侧内部图片（可选） */}
-          {/* <div className="absolute right-0 top-0 w-1/4 h-full z-0 overflow-hidden animate-float" style={{ animationDelay: '3s' }}>
-            <img
-              src="../../../public/image/Home/Yurikuma.gif" // 替换为你的图片路径
-              alt="百合熊岚动图"
-              className="w-full h-full object-contain drop-shadow-lg"
-            />
-          </div> */}
-
           <ImageWithEffects
             src="../../../../public/image/Home/guimi.jpg"
             pos="left-0 top-0 w-1/4 h-full z-0"
+            color='from-violet-600/70 via-violet-500/40 to-transparent'
+            info='呆呆可爱园丁'
           />
           <ImageWithEffects
             src="../../../../public/image/Home/Yurikuma.gif"
             pos="right-0 top-0 w-1/4 h-full z-0"
+            color='from-violet-600/70 via-violet-500/40 to-transparent'
+            info='露露和银子'
           />
 
           <div className="text-center mb-12">
