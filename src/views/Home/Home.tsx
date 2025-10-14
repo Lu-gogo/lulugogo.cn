@@ -117,7 +117,7 @@ export default function Home() {
 
       {/* <!-- 填补空白的装饰性区域 --> */}
       <div className="wave-pattern py-16 bg-gradient-to-b from-violet-500 to-violet-200">
-        <div className="relative container mx-auto px-4">
+        <div className="relative container h-60 mx-auto px-4">
           <ImageWithEffects
             src="../../../../public/image/Home/guimi.jpg"
             pos="left-0 top-0 w-1/4 h-full z-0"
@@ -133,8 +133,8 @@ export default function Home() {
 
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-violet-800 chinese-font mb-4">不想只当网友？</h2>
-            <p className="italic text-violet-800 line-through">还想跟我处闺蜜？</p>
-            <p className="italic text-violet-800 max-w-2xl mx-auto">欢迎通过以下方式找到我，一起分享命运的果实！</p>
+            <p className="italic text-white line-through">还想跟我处闺蜜？</p>
+            <p className="italic text-white max-w-2xl mx-auto">欢迎通过以下方式找到我，一起分享命运的果实！</p>
           </div>
           <ContactButtons />
         </div>

@@ -1,5 +1,3 @@
-
-
 interface imageProps {
   src: string,
   pos: string,
@@ -19,7 +17,7 @@ export default function ImageWithEffects({ src, pos, color, info }: imageProps) 
         {/* 主图片 */}
         <img
           src={src}
-          alt="百合熊风暴"
+          alt={info}
           className="w-full h-full object-cover transition-all "
         />
       </div>
