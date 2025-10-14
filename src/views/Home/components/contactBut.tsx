@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 type InfoType = 'penguin' | 'email' | null
 
 export default function ContactButtons() {
@@ -24,7 +24,7 @@ export default function ContactButtons() {
         </div>
 
         {/* 企鹅信息框 */}
-        <div className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-4 rounded-xl border-4 border-purple-600/20 bg-white p-6 text-center shadow-2xl p-6 z-10 min-w-max border border-purple-200 transition-all duration-300 ${activeInfo === 'penguin' ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2 pointer-events-none'}`}>
+        <div className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-4 rounded-xl border border-pink-200 bg-white text-pink-600 p-6 text-center shadow-2xl p-6 z-10 min-w-max transition-all duration-300 ${activeInfo === 'penguin' ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2 pointer-events-none'}`}>
           {/* 信息内容 */}
           320602150
         </div>
@@ -40,7 +40,7 @@ export default function ContactButtons() {
         </div>
 
         {/* 邮箱信息框 */}
-        <div className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-4 bg-white rounded-xl shadow-2xl p-6 z-10 min-w-max border border-purple-200 transition-all duration-300 ${activeInfo === 'email' ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2 pointer-events-none'}`}>
+        <div className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-4 rounded-xl border-pink-200 bg-white text-pink-600 p-6 z-10 min-w-max border border-purple-200 transition-all duration-300 ${activeInfo === 'email' ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2 pointer-events-none'}`}>
           {/* 信息内容 */}
           xi-lank@outlook.com
         </div>

@@ -1,5 +1,5 @@
-import ContactButtons from "./components/contactBut."
-
+import ContactButtons from "./components/contactBut"
+import ImageWithEffects from "./components/image"
 const links = [
   { value: '学点计算机', name: '什么我又幻想了', image: '../../../public/image/Home/huanxiang.png', href: 'https://github.com/Lu-gogo' },
   { value: '看点动漫', name: '呃呃是臭郭楠', image: '../../../public/image/Home/guonan.png', href: '#' },
@@ -117,21 +117,39 @@ export default function Home() {
 
       {/* <!-- 填补空白的装饰性区域 --> */}
       <div className="wave-pattern py-16 bg-gradient-to-b from-violet-500 to-violet-200">
-        <div className="container mx-auto px-4">
+        <div className="relative container mx-auto px-4">
+
+          {/* <div className="absolute left-0 top-0 w-1/4 h-full z-0 overflow-hidden animate-float" style={{ animationDelay: '3s' }}>
+            <img
+              src="../../../public/image/Home/guimi.jpg" // 替换为你的图片路径
+              alt="动漫角色装饰"
+              className="w-full h-full object-contain drop-shadow-lg"
+            />
+          </div> */}
+
+          {/* 右侧内部图片（可选） */}
+          {/* <div className="absolute right-0 top-0 w-1/4 h-full z-0 overflow-hidden animate-float" style={{ animationDelay: '3s' }}>
+            <img
+              src="../../../public/image/Home/Yurikuma.gif" // 替换为你的图片路径
+              alt="百合熊岚动图"
+              className="w-full h-full object-contain drop-shadow-lg"
+            />
+          </div> */}
+
+          <ImageWithEffects
+            src="../../../../public/image/Home/guimi.jpg"
+            pos="left-0 top-0 w-1/4 h-full z-0"
+          />
+          <ImageWithEffects
+            src="../../../../public/image/Home/Yurikuma.gif"
+            pos="right-0 top-0 w-1/4 h-full z-0"
+          />
+
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-violet-800 chinese-font mb-4">不想只当网友？</h2>
             <p className="italic text-violet-800 line-through">还想跟我处闺蜜？</p>
             <p className="italic text-violet-800 max-w-2xl mx-auto">欢迎通过以下方式找到我，一起分享命运的果实！</p>
           </div>
-
-          {/* <div className="flex flex-col sm:flex-row gap-70 justify-center items-center">
-            <div className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
-              我的企鹅
-            </div>
-            <div className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
-              我的邮箱
-            </div>
-          </div> */}
           <ContactButtons />
         </div>
       </div>
