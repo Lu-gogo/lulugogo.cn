@@ -1,5 +1,5 @@
-import ContactButtons from "./components/contactBut"
-import ImageWithEffects from "./components/image"
+import ContactButtons from "../../components/contactBut"
+import ImageWithEffects from "../../components/image"
 const links = [
   { value: '学点计算机', name: '什么我又幻想了', image: '../../../public/image/Home/huanxiang.png', href: 'https://github.com/Lu-gogo' },
   { value: '看点动漫', name: '呃呃是臭郭楠', image: '../../../public/image/Home/guonan.png', href: '#' },
