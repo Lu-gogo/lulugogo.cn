@@ -1,4 +1,5 @@
-import Home from './views/Home/Home.tsx'
+// import Home from './views/Home/index.tsx'
+import { Outlet } from 'react-router-dom'
 import { useState, useEffect } from 'react';
 import LoadingScreen from './components/loadingScreen';
 
@@ -20,7 +21,9 @@ export default function App() {
       {isLoading && <LoadingScreen />}
 
       {/* 网站主要内容 */}
-      <Home />
+      <main className="flex-grow">
+        <Outlet />
+      </main>
     </div>
   );
 }
