@@ -59,8 +59,8 @@ export default function Home() {
                           duration-300
                           cursor-pointer" // 响应式尺寸
               />
-              <h2 className="text-6xl sm:text-6xl font-semibold tracking-tight text-pink-600 whitespace-nowrap">
-                欢迎来到断绝之壁！嗷呜嗷呜!!!!
+              <h2 className="text-6xl sm:text-6xl font-semibold tracking-tight text-pink-600">
+                欢迎来到断绝之壁！嗷呜嗷呜~
               </h2>
             </div>
             <p className="italic mt-8 text-lg font-medium text-pretty text-pink-500 sm:text-xl/8 
@@ -80,7 +80,7 @@ export default function Home() {
                 <a
                   href={link.href}
                   key={link.name}
-                  className="group relative overflow-visiable rounded-b-4xl border-4 border-purple-600/20 bg-purple-400/40 p-6 text-center shadow-2xl shadow-indigo-500/50 transition-all duration-300 hover:scale-105 hover:border-purple-600/50 hover:bg-purple-400/60 hover:shadow-3xl"
+                  className="group relative overflow-visiable rounded-4xl border-4 border-purple-600/20 bg-purple-400/40 p-6 text-center shadow-2xl shadow-indigo-500/50 transition-all duration-300 hover:scale-105 hover:border-purple-600/50 hover:bg-purple-400/60 hover:shadow-3xl"
                 >
                   {/* 悬停时显示的图片 - 放在 a 标签内部 */}
                   <div className="absolute left-1/2 -top-40 transform -translate-x-1/2 z-20 opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none">
