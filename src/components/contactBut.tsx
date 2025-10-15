@@ -65,10 +65,6 @@ export default function ContactButtons() {
           onMouseEnter={() => handleMouseEnter('penguin')}
         >
           我的企鹅
-          <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-            点击查看企鹅号
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-full w-2 h-2 bg-black rotate-45"></div>
-          </span>
         </div>
 
         {/* 企鹅信息框 */}
@@ -80,7 +76,7 @@ export default function ContactButtons() {
             className="flex items-center justify-center gap-2 cursor-pointer group relative px-4 py-2 rounded-lg hover:bg-pink-50 transition-colors"
             onClick={() => copyToClipboard('320602150')}
           >
-            <span className="font-mono font-medium">320602150</span>
+            <span className="font-mono font-medium ">320602150</span>
 
             {/* 复制图标 */}
             {copied ? (
@@ -89,22 +85,9 @@ export default function ContactButtons() {
               <ClipboardDocumentIcon className="w-5 h-5 text-pink-500 group-hover:text-pink-700 transition-colors flex-shrink-0" />
             )}
 
-            {/* 悬停提示 */}
-            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
-              点击复制企鹅号
-              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full w-2 h-2 bg-black rotate-45"></div>
-            </div>
           </div>
 
           {/* 复制成功提示 */}
-          {copied && (
-            <div className="mt-2 text-green-500 text-sm font-medium flex items-center justify-center gap-1 animate-pulse">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              已复制到剪贴板
-            </div>
-          )}
         </div>
       </div>
 
@@ -115,10 +98,6 @@ export default function ContactButtons() {
           onMouseEnter={() => handleMouseEnter('email')}
         >
           我的gitHub
-          <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-            点击访问GitHub
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-full w-2 h-2 bg-black rotate-45"></div>
-          </span>
         </div>
 
         {/* GitHub信息框 */}
@@ -134,12 +113,6 @@ export default function ContactButtons() {
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-pink-500 group-hover:text-pink-700 transition-colors" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clipRule="evenodd" />
             </svg>
-
-            {/* 悬停提示 */}
-            <span className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
-              点击访问GitHub
-              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full w-2 h-2 bg-black rotate-45"></div>
-            </span>
           </a>
         </div>
       </div>
