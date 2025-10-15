@@ -4,51 +4,51 @@ const LoadingScreen = () => {
   const [progress, setProgress] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
 
-  // useEffect(() => {
-  //   // 实际加载检测
-  //   const handleLoad = () => {
-  //     setProgress(100);
-  //     setTimeout(() => setIsLoading(false), 500);
-  //   };
-
-  //   // 监听页面加载事件
-  //   window.addEventListener('load', handleLoad);
-
-  //   // 模拟进度更新
-  //   const interval = setInterval(() => {
-  //     if (progress < 90) {
-  //       setProgress(prev => prev + 10);
-  //     }
-  //   }, 300);
-
-  //   return () => {
-  //     window.removeEventListener('load', handleLoad);
-  //     clearInterval(interval);
-  //   };
-  // }, [progress])
-
   useEffect(() => {
-    // 模拟加载进度
+    // 实际加载检测
+    const handleLoad = () => {
+      setProgress(100);
+      setTimeout(() => setIsLoading(false), 500);
+    };
+
+    // 监听页面加载事件
+    window.addEventListener('load', handleLoad);
+
+    // 模拟进度更新
     const interval = setInterval(() => {
-      setProgress(prev => {
-        if (prev >= 100) {
-          clearInterval(interval);
-          return 100;
-        }
-        return prev + 10;
-      });
+      if (progress < 90) {
+        setProgress(prev => prev + 10);
+      }
     }, 300);
 
-    // 模拟实际加载过程
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 90000);
-
     return () => {
+      window.removeEventListener('load', handleLoad);
       clearInterval(interval);
-      clearTimeout(timer);
     };
-  }, [])
+  }, [progress])
+
+  // useEffect(() => {
+  //   // 模拟加载进度
+  //   const interval = setInterval(() => {
+  //     setProgress(prev => {
+  //       if (prev >= 100) {
+  //         clearInterval(interval);
+  //         return 100;
+  //       }
+  //       return prev + 10;
+  //     });
+  //   }, 300);
+
+  //   // 模拟实际加载过程
+  //   const timer = setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 90000);
+
+  //   return () => {
+  //     clearInterval(interval);
+  //     clearTimeout(timer);
+  //   };
+  // }, [])
 
   if (!isLoading) return null;
 
@@ -81,7 +81,7 @@ const LoadingScreen = () => {
 
           {/* 加载信息 */}
           <h2 className="text-2xl font-bold text-pink-700 mb-2 chinese-font">露露希的小作坊</h2>
-          <p className="text-violet-600/40 mb-4">正在前往断绝之壁... {progress}%</p>
+          <p className="text-violet-600/40 mb-4">我是不会放弃我的爱的... {progress}%</p>
 
           {/* 提示语 */}
           <div className="text-pink-600/40 text-sm italic max-w-md mx-auto">

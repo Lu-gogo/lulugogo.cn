@@ -21,9 +21,7 @@ export default function App() {
       {isLoading && <LoadingScreen />}
 
       {/* 网站主要内容 */}
-      <main className="flex-grow">
-        <Outlet />
-      </main>
+      <Outlet />
     </div>
   );
 }

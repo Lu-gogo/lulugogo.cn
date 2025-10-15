@@ -1,10 +1,10 @@
 import ContactButtons from "../../components/contactBut"
 import ImageWithEffects from "../../components/image"
 const links = [
-  { value: '学点计算机', name: '什么我又幻想了', image: '../../../public/image/Home/huanxiang.png', href: 'https://github.com/Lu-gogo' },
-  { value: '看点动漫', name: '呃呃是臭郭楠', image: '../../../public/image/Home/guonan.png', href: '#' },
-  { value: '做点模型', name: '魏大勋', image: '../../../public/image/Home/feiwu.png', href: '#' },
-  { value: '玩点小游戏', name: '诡秘诡秘想不想和我玩第五人格喵喵喵', image: '../../../public/image/Home/yuanding.png', href: '#' },
+  { value: '看点动漫', name: '呃呃是臭郭楠', image: '../../../public/image/Home/guonan.png', href: '/animate' },
+  { value: '来点高贵的摇滚', name: '什么我又幻想了', image: '../../../public/image/Home/huanxiang.png', href: '/rock' },
+  { value: '做点模型', name: '魏大勋', image: '../../../public/image/Home/feiwu.png', href: '/gunpla' },
+  { value: '玩点小游戏', name: '诡秘诡秘想不想和我玩第五人格喵喵喵', image: '../../../public/image/Home/yuanding.png', href: '/identify' },
 ]
 
 
