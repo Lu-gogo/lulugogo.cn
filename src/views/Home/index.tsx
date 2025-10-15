@@ -13,36 +13,13 @@ export default function Home() {
 
   return (
     <div className="selection:bg-white selection:text-pink-700">
-      <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+      <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-28">
         <img
           src="../../../public/image/Home/homeBanner.png"
           alt="露露希的小作坊背景图"
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
-        <div
-          aria-hidden="true"
-          className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
-        >
-          <div
-            style={{
-              clipPath:
-                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-            }}
-            className="aspect-1097/845 w-274.25 bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-20"
-          />
-        </div>
-        <div
-          aria-hidden="true"
-          className="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:-top-112 sm:ml-16 sm:translate-x-0"
-        >
-          <div
-            style={{
-              clipPath:
-                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-            }}
-            className="aspect-1097/845 w-274.25 bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-20"
-          />
-        </div>
+
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0 ">
             <div className="flex items-center gap-4 mb-6">
@@ -98,7 +75,7 @@ export default function Home() {
                 <div className="absolute -bottom-2 -left-2 h-12 w-12 rounded-tr-full bg-sky-500/20"></div> */}
 
                   <div className="relative z-10">
-                    <div className="text-2xl font-bold text-violet-500 transition-colors group-hover:text-violet-700">
+                    <div className="text-2xl font-bold text-white transition-colors group-hover:text-violet-700">
                       {link.value}
                     </div>
                     <div className="line-through mt-2 text-sm text-pink-100 transition-colors group-hover:text-white/80">
@@ -108,17 +85,21 @@ export default function Home() {
                 </a>
               ))}
             </div>
-
           </div>
-
-
         </div>
       </div>
 
-      {/* <!-- 填补空白的装饰性区域 --> */}
-      <div className="wave-pattern py-16 bg-gradient-to-b from-violet-500 to-violet-200">
-        <div className="relative container h-60 mx-auto px-4">
-          <ImageWithEffects
+      {/* <!-- 底部空白跳转区域 --> */}
+      <div className="isolate bg-gradient-to-b from-violet-400/40 to-violet-600/80 ">
+
+        <div className="isolate relative mx-60 py-240 
+                                        lg:mx-60 lg:py-240
+                                        sm:mx-30 sm:py-150">
+          <img src="../../../public/image/home/fox.jpg" alt="ak15"
+            className="absolute inset-0 left-1/2 -z-10 h-full w-full -translate-x-1/2 object-cover  sm:h-full sm:object-cover" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-b from-violet-800/80 to-violet-400/40" ></div>
+
+          {/* <ImageWithEffects
             src="../../../../public/image/Home/guimi.jpg"
             pos="left-0 top-0 w-1/4 h-full z-0"
             color='from-violet-600/70 via-violet-500/40 to-transparent'
@@ -129,14 +110,17 @@ export default function Home() {
             pos="right-0 top-0 w-1/4 h-full z-0"
             color='from-violet-600/70 via-violet-500/40 to-transparent'
             info='露露和银子'
-          />
+          /> */}
 
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-violet-800 chinese-font mb-4">不想只当网友？</h2>
-            <p className="italic text-white line-through">还想跟我处闺蜜？</p>
-            <p className="italic text-white max-w-2xl mx-auto">欢迎通过以下方式找到我，一起分享命运的果实！</p>
+          <div className="absolute bottom-0 left-0 right-0 lg:h-1/4 sm:h-1/3 container mb-20 py-40">
+            <div className="text-center mb-10">
+              <h2 className="text-6xl font-bold text-white chinese-font mb-10">不想只当网友？</h2>
+              <p className="italic text-xl text-white line-through">还想跟我处闺蜜？</p>
+              <p className="italic text-xl text-white max-w-2xl mx-auto">欢迎通过以下方式找到我，一起分享命运的果实！</p>
+            </div>
+            <ContactButtons />
           </div>
-          <ContactButtons />
+
         </div>
       </div>
 

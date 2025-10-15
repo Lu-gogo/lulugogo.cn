@@ -61,7 +61,7 @@ export default function ContactButtons() {
       {/* 我的企鹅按钮 */}
       <div className="relative">
         <div
-          className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 cursor-pointer group"
+          className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-16 py-6 text-2xl rounded-full font-semibold shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 cursor-pointer group"
           onMouseEnter={() => handleMouseEnter('penguin')}
         >
           我的企鹅
@@ -76,7 +76,7 @@ export default function ContactButtons() {
             className="flex items-center justify-center gap-2 cursor-pointer group relative px-4 py-2 rounded-lg hover:bg-pink-50 transition-colors"
             onClick={() => copyToClipboard('320602150')}
           >
-            <span className="font-mono font-medium ">320602150</span>
+            <span className="font-mono font-medium text-xl">320602150</span>
 
             {/* 复制图标 */}
             {copied ? (
@@ -94,14 +94,14 @@ export default function ContactButtons() {
       {/* 我的github按钮 */}
       <div className="relative">
         <div
-          className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 cursor-pointer group"
+          className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-16 py-6 text-2xl rounded-full font-semibold shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 cursor-pointer group"
           onMouseEnter={() => handleMouseEnter('email')}
         >
           我的gitHub
         </div>
 
         {/* GitHub信息框 */}
-        <div className={`italic absolute bottom-full left-1/2 transform -translate-x-1/2 mb-4 rounded-xl border-pink-200 bg-white text-pink-600 p-6 z-10 min-w-max border border-purple-200 transition-all duration-300 ${activeInfo === 'email' ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2 pointer-events-none'}`}>
+        <div className={`italic text-xl absolute bottom-full left-1/2 transform -translate-x-1/2 mb-4 rounded-xl border-pink-200 bg-white text-pink-600 p-6 z-10 min-w-max border border-purple-200 transition-all duration-300 ${activeInfo === 'email' ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2 pointer-events-none'}`}>
           {/* 信息内容 */}
           <a
             href="https://github.com/Lu-gogo"
