@@ -5,6 +5,19 @@ interface imageProps {
   info: string,
 }
 
+{/* <ImageWithEffects
+            src="../../../../public/image/Home/guimi.jpg"
+            pos="left-0 top-0 w-1/4 h-full z-0"
+            color='from-violet-600/70 via-violet-500/40 to-transparent'
+            info='呆呆可爱园丁'
+          />
+          <ImageWithEffects
+            src="../../../../public/image/Home/Yurikuma.gif"
+            pos="right-0 top-0 w-1/4 h-full z-0"
+            color='from-violet-600/70 via-violet-500/40 to-transparent'
+            info='露露和银子'
+          /> */}
+
 export default function ImageWithEffects({ src, pos, color, info }: imageProps) {
 
   return (

@@ -1,5 +1,5 @@
 import ContactButtons from "../../components/contactBut"
-import ImageWithEffects from "../../components/image"
+
 const links = [
   { value: '看点动漫', name: '呃呃是臭郭楠', image: '../../../public/image/Home/guonan.png', href: '/animate' },
   { value: '来点高贵的摇滚', name: '什么我又幻想了', image: '../../../public/image/Home/huanxiang.png', href: '/rock' },
@@ -70,10 +70,6 @@ export default function Home() {
                     </div>
 
                   </div>
-                  {/* 装饰性角标 */}
-                  {/* <div className="absolute -top-2 -right-2 h-10 w-10 rounded-bl-full bg-emerald-400/20"></div>
-                <div className="absolute -bottom-2 -left-2 h-12 w-12 rounded-tr-full bg-sky-500/20"></div> */}
-
                   <div className="relative z-10">
                     <div className="text-2xl font-bold text-white transition-colors group-hover:text-violet-700">
                       {link.value}
@@ -98,19 +94,6 @@ export default function Home() {
           <img src="../../../public/image/home/fox.jpg" alt="ak15"
             className="absolute inset-0 left-1/2 -z-10 h-full w-full -translate-x-1/2 object-cover  sm:h-full sm:object-cover" />
           <div className="absolute inset-0 -z-10 bg-gradient-to-b from-violet-800/80 to-violet-400/40" ></div>
-
-          {/* <ImageWithEffects
-            src="../../../../public/image/Home/guimi.jpg"
-            pos="left-0 top-0 w-1/4 h-full z-0"
-            color='from-violet-600/70 via-violet-500/40 to-transparent'
-            info='呆呆可爱园丁'
-          />
-          <ImageWithEffects
-            src="../../../../public/image/Home/Yurikuma.gif"
-            pos="right-0 top-0 w-1/4 h-full z-0"
-            color='from-violet-600/70 via-violet-500/40 to-transparent'
-            info='露露和银子'
-          /> */}
 
           <div className="absolute bottom-0 left-0 right-0 lg:h-1/4 sm:h-1/3 container mb-20 py-40">
             <div className="text-center mb-10">
