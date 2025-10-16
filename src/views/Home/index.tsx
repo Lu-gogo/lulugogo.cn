@@ -88,18 +88,40 @@ export default function Home() {
 
       {/* <!-- 底部空白跳转区域 --> */}
       <div className="relative isolate bg-gradient-to-b from-violet-400/40 to-violet-600/80 ">
-        <img src="../../../public/image/home/Emma.png" alt="园丁宝宝"
-          className="absolute left-0 top-1/2 -translate-y-1/2 sm:w-30
-                                                              lg:w-60" />
-        <img src="../../../public/image/home/mdr_selfPhoto.png" alt="mdr"
-          className="absolute right-0 top-0 sm:w-30
-                                            lg:w-60" />
-
+        <ImageWithEffects
+          src="../../../../public/image/Home/Yurikuma.gif"
+          pos="left-0 bottom-0 sm:w-30 lg:w-60"
+          color='from-violet-600/70 via-violet-500/40 to-transparent'
+          info='露露和银子'
+          border='border-2 border-transparent group-hover:border-yellow-300'
+        />
+        <ImageWithEffects
+          src="../../../public/image/home/Emma.png"
+          pos="left-40 top-1/2 -translate-y-1/2 sm:w-30 lg:w-60"
+          color=''
+          info='园丁宝宝'
+          border=''
+        />
+        <ImageWithEffects
+          src="../../../public/image/home/mdr_selfPhoto.png"
+          pos="right-0 top-0 sm:w-60 lg:w-90"
+          color=''
+          info='mdr玩手机'
+          border=''
+        />
         <ImageWithEffects
           src="../../../public/image/loading/bearDance.gif"
-          pos="right-0 bottom-10 sm:w-30 lg:w-60"
+          pos="right-0 bottom-0 sm:w-30 lg:w-60"
           color='from-violet-600/70 via-violet-500/40 to-transparent'
-          info='百合熊跳舞'
+          info=''
+          border=''
+        />
+        <ImageWithEffects
+          src="../../../public/image/home/Emma__Tracy.png"
+          pos="right-0 top-1/2 -translate-y-1/2 sm:w-75 lg:w-150"
+          color=''
+          info='丁丁和特儿'
+          border=''
         />
 
         <div className="isolate relative mx-60 py-240 
@@ -108,10 +130,6 @@ export default function Home() {
           <img src="../../../public/image/home/fox.jpg" alt="ak15"
             className="absolute inset-0 left-1/2 -z-10 h-full w-full -translate-x-1/2 object-cover  sm:h-full sm:object-cover" />
           <div className="absolute inset-0 -z-10 bg-gradient-to-b from-violet-800/80 to-violet-400/40" ></div>
-
-          <img src="../../../public/image/home/Emma__Tracy.png" alt="丁丁和特儿"
-            className="absolute right-0 top-1/2 -translate-y-1/2 sm:w-75  
-                                              lg:w-150" />
 
           <div className="absolute bottom-0 left-0 right-0 lg:h-1/4 sm:h-1/3 container mb-20 py-40">
             <div className="text-center mb-10">
