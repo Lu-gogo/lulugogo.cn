@@ -104,11 +104,25 @@ export default function Home() {
         />
         <ImageWithEffects
           src="../../../public/image/home/mdr_selfPhoto.png"
-          pos="right-0 top-0 sm:w-60 lg:w-90"
+          pos="right-20 top-40 sm:w-45 lg:w-90"
           color=''
-          info='mdr玩手机'
+          info='mdr自拍'
           border=''
         />
+        <ImageWithEffects
+          src="../../../public/image/home/anne.png"
+          pos="right-1/2 top-1/3 translate-x-1/2 sm:w-60 lg:w-90"
+          color=''
+          info='Anne宝宝'
+          border=''
+        />
+        {/* <ImageWithEffects
+          src="../../../public/image/home/redKing.png"
+          pos="left-10 top-0 sm:w-60 lg:w-90"
+          color=''
+          info='红王超凶'
+          border=''
+        /> */}
         <ImageWithEffects
           src="../../../public/image/loading/bearDance.gif"
           pos="right-0 bottom-0 sm:w-30 lg:w-60"
@@ -131,6 +145,9 @@ export default function Home() {
             className="absolute inset-0 left-1/2 -z-10 h-full w-full -translate-x-1/2 object-cover  sm:h-full sm:object-cover" />
           <div className="absolute inset-0 -z-10 bg-gradient-to-b from-violet-800/80 to-violet-400/40" ></div>
 
+          <div className="absolute left-0 top-0">
+            <p></p>
+          </div>
           <div className="absolute bottom-0 left-0 right-0 lg:h-1/4 sm:h-1/3 container mb-20 py-40">
             <div className="text-center mb-10">
               <h2 className="text-6xl font-bold text-white chinese-font mb-10">不想只当网友？</h2>
