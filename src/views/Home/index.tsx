@@ -97,7 +97,7 @@ export default function Home() {
         />
         <ImageWithEffects
           src="../../../public/image/home/Emma.png"
-          pos="left-40 top-1/2 -translate-y-1/2 sm:w-30 lg:w-60"
+          pos="left-1/16 top-1/2 -translate-y-1/2 sm:w-30 lg:w-60"
           color=''
           info='园丁宝宝'
           border=''
@@ -145,8 +145,16 @@ export default function Home() {
             className="absolute inset-0 left-1/2 -z-10 h-full w-full -translate-x-1/2 object-cover  sm:h-full sm:object-cover" />
           <div className="absolute inset-0 -z-10 bg-gradient-to-b from-violet-800/80 to-violet-400/40" ></div>
 
-          <div className="absolute left-0 top-0">
-            <p></p>
+          <div className="absolute sm:left-10 sm:top-10 lg:left-20 lg:top-20
+            sm:text-xl lg:text-2xl text-white font-bold leading-loose">
+            <p className="text-white">我想要的东西从以前到现在都没有变</p>
+            <p className="text-white">就是眼前所没有的某一样东西</p>
+            <p className="text-white">在出发之前至少要准备好四样东西</p>
+            <p className="text-white">「许可」「手段」「资格」「契约」</p>
+            <p className="text-white">我正在享受旅行的过程</p>
+            <p className="text-white">记得要享受过程 尽情地享受</p>
+            <p className="text-white">比想要的东西还珍贵的事物</p>
+            <p className="text-white">一定会出现在追求的过程里</p>
           </div>
           <div className="absolute bottom-0 left-0 right-0 lg:h-1/4 sm:h-1/3 container mb-20 py-40">
             <div className="text-center mb-10">
