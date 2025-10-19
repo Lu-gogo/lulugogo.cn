@@ -6,7 +6,7 @@ const NotFound = () => {
     <div className="selection:bg-white selection:text-pink-700">
       <div className="relative isolate overflow-hidden bg-gray-900 h-screen">
         <img
-          src="../../../public/image/404/404.jpg"
+          src="../../../public/image/404/sleep.png"
           alt="404背景图"
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
