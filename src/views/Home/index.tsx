@@ -116,19 +116,12 @@ export default function Home() {
           info='Anne宝宝'
           border=''
         />
-        {/* <ImageWithEffects
-          src="../../../public/image/home/redKing.png"
-          pos="left-10 top-0 sm:w-60 lg:w-90"
-          color=''
-          info='红王超凶'
-          border=''
-        /> */}
         <ImageWithEffects
           src="../../../public/image/loading/bearDance.gif"
           pos="right-0 bottom-0 sm:w-30 lg:w-60"
           color='from-violet-600/70 via-violet-500/40 to-transparent'
           info=''
-          border=''
+          border='border-2 border-transparent group-hover:border-yellow-300'
         />
         <ImageWithEffects
           src="../../../public/image/home/Emma__Tracy.png"

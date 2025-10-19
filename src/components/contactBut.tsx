@@ -54,7 +54,7 @@ export default function ContactButtons() {
     } finally {
       document.body.removeChild(textArea);
     }
-  };
+  }
 
   return (
     <div className="flex flex-col sm:flex-row gap-20 justify-center items-center py-10">
@@ -86,8 +86,6 @@ export default function ContactButtons() {
             )}
 
           </div>
-
-          {/* 复制成功提示 */}
         </div>
       </div>
 
