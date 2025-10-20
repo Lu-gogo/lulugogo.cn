@@ -80,11 +80,11 @@ const LoadingScreen = () => {
           </div>
 
           {/* 加载信息 */}
-          <h2 className="text-2xl font-bold text-pink-700 mb-2 chinese-font">露露希的小作坊</h2>
-          <p className="text-violet-600/40 mb-4">我是不会放弃我的爱的... {progress}%</p>
+          <h2 className="lg:mb-2 lg:text-2xl sm:text-6xl sm:mb-4 font-bold text-pink-700 chinese-font">露露希的小作坊</h2>
+          <p className="text-pink-400 lg:text-lg lg:mb-4 sm:text-2xl sm:mb-8">我是不会放弃我的爱的... {progress}%</p>
 
           {/* 提示语 */}
-          <div className="text-pink-600/40 text-sm italic max-w-md mx-auto">
+          <div className="text-pink-600/40 lg:text-sm lg:mb-4 sm:text-2xl italic max-w-md mx-auto">
             <p>尽管这世界有太多的无奈</p>
             <p>但我会守护你的幸福</p>
             <p>虽然说谁都可以胜任</p>
