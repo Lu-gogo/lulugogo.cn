@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import sanni from '../assets/webq/loading/sanni.webp'
 
 const LoadingScreen = () => {
   const [progress, setProgress] = useState(0);
@@ -56,7 +57,7 @@ const LoadingScreen = () => {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-purple-900 to-pink-800 transition-opacity duration-1000 opacity-100">
       <div className="relative h-full w-full object-cover flex items-center justify-center">
         <img
-          src="../../public/image/loading/sanni.png"
+          src={sanni}
           alt="露露希的小作坊背景图"
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
@@ -65,7 +66,7 @@ const LoadingScreen = () => {
           {/* 动画角色 */}
           <div className="relative mx-auto mb-8 w-40 h-40 rounded-full overflow-hidden shadow-lg">
             <img
-              src="../../public/image/loading/bearDance.gif"
+              src="../../public/image/bearDance.gif"
               alt="熊熊跳舞中..."
               className="w-full h-full object-cover animate-float"
             />

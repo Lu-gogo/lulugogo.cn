@@ -1,11 +1,22 @@
 import ContactButtons from "../../components/contactBut"
 import ImageWithEffects from "../../components/image.tsx"
+import homeBanner from '@/assets/webq/home/homeBanner.webp'
+import Emma from '@/assets/webq/home/Emma.webp'
+import mdr_selfPhoto from '@/assets/webq/home/mdr_selfPhoto.webp'
+import anne from '@/assets/webq/home/anne.webp'
+import Emma__Tracy from '@/assets/webq/home/Emma__Tracy.webp'
+import guonan from '@/assets/webq/home/guonan.webp'
+import huanxiang from '@/assets/webq/home/huanxiang.webp'
+import feiwu from '@/assets/webq/home/feiwu.webp'
+import yuanding from '@/assets/webq/home/yuanding.webp'
+import fox from '@/assets/webq/home/fox.webp'
+
 
 const links = [
-  { value: '看点动漫', name: '呃呃是臭郭楠', image: '../../../public/image/Home/guonan.png', href: '/animate' },
-  { value: '来点高贵的摇滚', name: '什么我又幻想了', image: '../../../public/image/Home/huanxiang.png', href: '/rock' },
-  { value: '做点模型', name: '魏大勋', image: '../../../public/image/Home/feiwu.png', href: '/gunpla' },
-  { value: '玩点小游戏', name: '诡秘诡秘想不想和我玩第五人格喵喵喵', image: '../../../public/image/Home/yuanding.png', href: '/identify' },
+  { value: '看点动漫', name: '呃呃是臭郭楠', image: guonan, href: '/animate' },
+  { value: '来点高贵的摇滚', name: '什么我又幻想了', image: huanxiang, href: '/rock' },
+  { value: '做点模型', name: '魏大勋', image: feiwu, href: '/gunpla' },
+  { value: '玩点小游戏', name: '诡秘诡秘想不想和我玩第五人格喵喵喵', image: yuanding, href: '/identify' },
 ]
 
 
@@ -16,7 +27,7 @@ export default function Home() {
     <div className="selection:bg-white selection:text-pink-700">
       <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-28">
         <img
-          src="../../../public/image/Home/homeBanner.png"
+          src={homeBanner}
           alt="露露希的小作坊背景图"
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
@@ -89,42 +100,42 @@ export default function Home() {
       {/* <!-- 底部空白跳转区域 --> */}
       <div className="relative isolate bg-gradient-to-b from-violet-400/40 to-violet-600/80 ">
         <ImageWithEffects
-          src="../../../../public/image/Home/Yurikuma.gif"
+          src="../../../public/image/Yurikuma.gif"
           pos="left-0 bottom-0 sm:w-30 lg:w-60"
           color='from-violet-600/70 via-violet-500/40 to-transparent'
           info='露露和银子'
           border='border-2 border-transparent group-hover:border-yellow-300'
         />
         <ImageWithEffects
-          src="../../../public/image/home/Emma.png"
+          src={Emma}
           pos="left-1/16 top-1/2 -translate-y-1/2 sm:w-30 lg:w-60"
           color=''
           info='园丁宝宝'
           border=''
         />
         <ImageWithEffects
-          src="../../../public/image/home/mdr_selfPhoto.png"
+          src={mdr_selfPhoto}
           pos="right-20 top-40 sm:w-45 lg:w-90"
           color=''
           info='mdr自拍'
           border=''
         />
         <ImageWithEffects
-          src="../../../public/image/home/anne.png"
+          src={anne}
           pos="right-1/2 top-1/3 translate-x-1/2 sm:w-60 lg:w-90"
           color=''
           info='Anne宝宝'
           border=''
         />
         <ImageWithEffects
-          src="../../../public/image/loading/bearDance.gif"
+          src="../../../public/image/bearDance.gif"
           pos="right-0 bottom-0 sm:w-30 lg:w-60"
           color='from-violet-600/70 via-violet-500/40 to-transparent'
           info=''
           border='border-2 border-transparent group-hover:border-yellow-300'
         />
         <ImageWithEffects
-          src="../../../public/image/home/Emma__Tracy.png"
+          src={Emma__Tracy}
           pos="right-0 top-1/2 -translate-y-1/2 sm:w-75 lg:w-150"
           color=''
           info='丁丁和特儿'
@@ -134,7 +145,7 @@ export default function Home() {
         <div className="isolate relative mx-60 py-240 
                                         lg:mx-60 lg:py-240
                                         sm:mx-30 sm:py-150">
-          <img src="../../../public/image/home/fox.jpg" alt="ak15"
+          <img src={fox} alt="ak15"
             className="absolute inset-0 left-1/2 -z-10 h-full w-full -translate-x-1/2 object-cover  sm:h-full sm:object-cover" />
           <div className="absolute inset-0 -z-10 bg-gradient-to-b from-violet-800/80 to-violet-400/40" ></div>
 
